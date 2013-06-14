@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout 
+        android:id="@+id/lin1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_footer"
+            android:gravity="center"
+            android:text="test" />
+         <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_done_default"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin2"
+        android:layout_below="@+id/lin1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/lin3"
+         >
+         <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+        
+        </RelativeLayout>
+        
+     <RelativeLayout 
+        android:id="@+id/lin3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:background="@drawable/bg_footer"  >
+         
+         <Button
+            android:id="@+id/pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="@drawable/btn_prev_default"  
+			android:gravity="center_vertical"          
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_next_default" android:layout_alignParentRight="true"/>
+         
+    </RelativeLayout>
+        
+</RelativeLayout>
